@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* header */
+
+header.nav-menu nav ul {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 8px 12px;
+  font-size: 1.2rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+header.nav-menu nav ul li {
+  border-radius: 8px;
+  padding: 8px 12px;
+  transition: all ease 300ms;
+}
+
+header.nav-menu nav ul li:hover {
+  background: #e7e7e7;
+}
+
+header.nav-menu nav ul li:active {
+  background: #dfdfdf;
+}
+
+header.nav-menu nav ul li:first-child {
+  margin: 0 auto 0 0;
+}
+
+header.nav-menu nav ul li:first-child .location {
+  margin: 0 12px 0 0;
+  padding: 0 12px 0 0;
+  border-right: 2px solid #0f0f0f36;
+}
+
+/* /header */
+
+/* Content */
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 24px 8px 16px 8px;
+}
+
+.travels-list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 12px;
+  border-radius: 8px;
+}
+
+.travels-list li {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.travels-list img,
+.travels-list a {
+  width: 100%;
+  height: 100%;
+}
+
+.travels-list img {
+  object-fit: fill;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.travels-list .content {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.travels-list a:hover a {
+  transform: scale(1.02);
+}
+
+.travels-list a:active a {
+  transform: scale(0.98);
+}
+
+.travels-list li:nth-child(even) a {
+  order: 2;
+}
+
+/* Content */
