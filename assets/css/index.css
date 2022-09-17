@@ -53,7 +53,7 @@ main {
 .travels-list {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   gap: 12px;
   border-radius: 8px;
 }
@@ -71,13 +71,33 @@ main {
 }
 
 .travels-list img {
-  object-fit: fill;
+  object-fit: cover;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+}
+
+.travels-list img:hover {
+  transform: scale(1.02);
+}
+
+.travels-list img:active {
+  transform: scale(0.98);
 }
 
 .travels-list .content {
+  padding: 6px 8px;
   display: grid;
+  gap: 12px;
   grid-template-rows: min-content 1fr;
+}
+
+.travels-list .content h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.travels-list .content p {
+  color: #444444;
 }
 
 .travels-list a:hover a {
@@ -90,6 +110,24 @@ main {
 
 .travels-list li:nth-child(even) a {
   order: 2;
+}
+
+@media (min-width: 768px) {
+  .travels-list {
+    width: 86%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .travels-list {
+    width: 66%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .travels-list {
+    width: 50%;
+  }
 }
 
 /* Content */
