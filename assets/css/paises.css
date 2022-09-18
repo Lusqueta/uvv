@@ -1,0 +1,35 @@
+.content {
+  padding: 6px 8px;
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 32px;
+
+  justify-items: center;
+  width: 40%;
+}
+
+.content section {
+  display: grid;
+  width: 100%;
+  grid-template-rows: fit-content 1fr;
+  gap: 12px;
+}
+
+.content h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content p {
+  color: #444444;
+  font-size: 1rem;
+}
+
+img {
+  object-fit: cover;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  align-items: center;
+  width: 100%;
+}

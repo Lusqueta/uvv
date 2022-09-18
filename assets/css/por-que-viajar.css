@@ -1,0 +1,16 @@
+.content h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  width: 40%;
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 12px;
+}
+
+.content img {
+  width: min-content;
+}
